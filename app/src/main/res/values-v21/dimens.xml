@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="my_margin">6dp</dimen>
+    <dimen name="gridview">5dp</dimen>
+    <!--<dimen name="gridGuide">0dp</dimen>-->
+    <dimen name="cardElevation">3dp</dimen>
+</resources>

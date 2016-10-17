@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 352,
+                    "endColumn": 26,
+                    "endOffset": 374
+                },
+                "from": {
+                    "file": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 352,
+                        "endColumn": 26,
+                        "endOffset": 374
+                    }
+                }
+            }
+        ]
+    }
+]

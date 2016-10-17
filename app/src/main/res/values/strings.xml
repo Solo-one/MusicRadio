@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">音乐电台</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- 歌曲列表操作 -->
+    <string name="unknown_artist">未知艺术家</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="collect">收藏</string>
+    <string name="sdcard_cannot_use">SD卡暂时不可用</string>
+    <string name="add_to">添加到</string>
+    <string name="add_success">添加成功</string>
+    <string name="add_to_playlist">添加到播放列表</string>
+    <string name="delete">删除</string>
+    <string name="confirm_delete_song_file">您确定要从外存上删除歌曲吗？</string>
+    <string name="confirm_clear_playqueue">您确定要清空列表吗？</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_failed">删除失败</string>
+
+
+    <!-- 歌曲详细信息 -->
+    <string name="song_infomation">歌曲信息</string>
+    <string name="song_name">歌曲名称</string>
+    <string name="check_detail">查看信息</string>
+    <string name="artist">艺术家</string>
+    <string name="file_format">文件格式</string>
+    <string name="file_size">文件大小</string>
+    <string name="file_path">文件路径</string>
+    <string name="song_duration">播放时长</string>
+    <string name="close">关闭</string>
+
+    <!-- 歌曲列表的操作 -->
+    <string name="mutiple_choose">多选</string>
+    <string name="play_all">全部播放</string>
+
+    <!-- 歌曲列表的搜索框 -->
+    <string name="search">查找</string>
+    <string name="please_input_jianpin_or_quanpin">请输入简拼或全拼</string>
+    <string name="please_input_song_or_artist_name">请输入歌曲名称或歌手名称</string>
+</resources>

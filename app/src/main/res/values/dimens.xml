@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="my_margin">0dp</dimen>
+    <dimen name="gridview">-5dp</dimen>
+    <dimen name="flexible_space_image_height">15dp</dimen>
+    <!--<dimen name="gridGuide">-10dp</dimen>-->
+    <dimen name="cardElevation">0dp</dimen>
+</resources>

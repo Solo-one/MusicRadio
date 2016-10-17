@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="3dp">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="6dp"
+        android:layout_height="60dp"
+        android:background="#e17676"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="12dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/az9" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/img1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_music_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="歌名"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textview_music_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_music_title"
+            android:padding="2dp"
+            android:text="歌手"
+            android:textColor="#999393" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/more"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="#FFF"
+        android:gravity="center_vertical|right">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dky" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+

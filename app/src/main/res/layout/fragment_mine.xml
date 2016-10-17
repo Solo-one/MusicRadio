@@ -1,0 +1,279 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edecec"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="8dp"
+            android:background="#fff">
+
+            <com.example.asus.kugoumusic.selfwidget.CircleImageView
+                android:id="@+id/headerPIC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="6dp"
+                android:layout_width="63dp"
+                android:layout_height="63dp"
+                android:src="@drawable/myspace_head_img_default"
+                />
+
+            <TextView
+                android:id="@+id/item0"
+                android:layout_toRightOf="@id/headerPIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/mine_style"
+                android:drawableRight="@drawable/ic_more"
+                android:layout_centerVertical="true"
+                android:text="立即登录" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+        <TextView
+            android:id="@+id/item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mine_style"
+            android:drawableLeft="@drawable/msg_center_img"
+            android:drawableRight="@drawable/ic_more"
+            android:text="消息中心" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+
+        <TextView
+            android:id="@+id/item2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mine_style"
+            android:drawableLeft="@drawable/ic_wd_rss"
+            android:drawableRight="@drawable/ic_more"
+            android:text="我的订阅" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+        <TextView
+            android:id="@+id/item3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mine_style"
+            android:drawableLeft="@drawable/play_record_img"
+            android:drawableRight="@drawable/ic_more"
+            android:text="播放历史"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+        <TextView
+            android:id="@+id/item4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mine_style"
+            android:drawableLeft="@drawable/ic_wd_like"
+            android:drawableRight="@drawable/ic_more"
+            android:text="赞过的"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+        <TextView
+            android:id="@+id/item5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mine_style"
+            android:drawableLeft="@drawable/my_points_img"
+            android:drawableRight="@drawable/ic_more"
+            android:text="我的积分"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+        <TextView
+            android:id="@+id/item6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mine_style"
+            android:drawableLeft="@drawable/me_setting_carmode"
+            android:drawableRight="@drawable/ic_more"
+            android:text="车载模式"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+        <TextView
+            android:id="@+id/item7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mine_style"
+            android:drawableLeft="@drawable/ic_wd_robot"
+            android:drawableRight="@drawable/ic_more"
+            android:text="智能硬件设备"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+
+        <TextView
+            android:id="@+id/item8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mine_style"
+            android:drawableLeft="@drawable/find_friend_img"
+            android:drawableRight="@drawable/ic_more"
+            android:text="找听友" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+        <TextView
+            android:id="@+id/item9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mine_style"
+            android:drawableLeft="@drawable/ic_wd_feedback"
+            android:drawableRight="@drawable/ic_more"
+            android:text="意见反馈"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+        <TextView
+            android:id="@+id/item10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mine_style"
+            android:drawableLeft="@drawable/ic_wd_mall"
+            android:drawableRight="@drawable/ic_more"
+            android:text="喜马拉雅商城"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+
+        <TextView
+            android:id="@+id/item11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mine_style"
+            android:drawableLeft="@drawable/ic_wd_setting"
+            android:drawableRight="@drawable/ic_more"
+            android:text="设置"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+
+        <TextView
+            android:id="@+id/item12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:gravity="center"
+            android:textColor="#333"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="退出登录"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            style="@style/mine_style_color"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp" />
+
+    </LinearLayout>
+
+</ScrollView>

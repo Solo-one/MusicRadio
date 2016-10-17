@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BackgroundColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.kugoumusic.Guide.DiscoverFragment">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/topcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:stateListAnimator="@anim/touch_raise"
+        app:cardBackgroundColor="#FFF"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="@dimen/cardElevation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f7f7f7"
+                android:paddingBottom="12dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="12dp">
+
+                <ImageView
+                    android:id="@+id/icon_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/myspin_title_logo" />
+
+                <EditText
+                    android:id="@+id/edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@+id/search"
+                    android:layout_toRightOf="@id/icon_header"
+                    android:background="@drawable/bg5"
+                    android:drawableLeft="@drawable/search"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="end"
+                    android:hint="演员、下一秒"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="4dp"
+                    android:singleLine="true"
+                    android:textColorHint="#bfbfbf"
+                    android:textCursorDrawable="@drawable/cursor_bg"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/tab4_down" />
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/top"
+                android:background="#f7f7f7"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:tabBackground="@drawable/tablayout_background"
+                app:tabContentStart="0dp"
+                app:tabIndicatorColor="#f26e6e"
+                app:tabIndicatorHeight="1dp"
+                app:tabMode="scrollable"
+                app:tabPaddingEnd="0dp"
+                app:tabPaddingStart="0dp"
+                app:tabSelectedTextColor="#e45f5f"
+                app:tabTextAppearance="@style/TabLayoutTextStyle"
+                app:tabTextColor="#8c8c8c">
+
+            </android.support.design.widget.TabLayout>
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topcard">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
+
+

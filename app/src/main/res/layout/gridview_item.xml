@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="false"
+        android:layout_margin="@dimen/gridview"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#FFF"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+        android:stateListAnimator="@anim/touch_raise">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/player_cover_default" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/album_play"
+            android:layout_gravity="bottom|right"/>
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <TextView
+        android:id="@+id/album_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="中秋特辑许嵩：对月独饮江" />
+
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/finding_album_img"
+        android:drawablePadding="1dp"
+        android:ellipsize="end"
+        android:layout_marginLeft="5dp"
+        android:singleLine="true"
+        android:text="旧年华" />
+
+</LinearLayout>

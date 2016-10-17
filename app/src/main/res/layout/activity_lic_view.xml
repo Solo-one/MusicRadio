@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/lrcgone"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#a0000000">
+
+    </LinearLayout>
+
+    <com.example.asus.kugoumusic.tmp.myView.LrcView
+        android:id="@+id/gc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>
+

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\sat_main.png",
+        "source": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\sat_main.png"
+    },
+    {
+        "merged": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\sat_item.png",
+        "source": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\sat_item.png"
+    },
+    {
+        "merged": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ic_launcher.png"
+    }
+]

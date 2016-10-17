@@ -1,0 +1,597 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context="com.example.asus.kugoumusic.discover.FenleiFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 顶部ViewPager -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+            </android.support.v4.view.ViewPager>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_gravity="bottom"
+                android:background="#33000000"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中国家庭院校园区域名字体现"
+                    android:textColor="#ffffff" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/v_dot0"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/dot_focused" />
+
+                    <View
+                        android:id="@+id/v_dot1"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/dot_normal" />
+
+                    <View
+                        android:id="@+id/v_dot2"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/dot_normal" />
+
+                    <View
+                        android:id="@+id/v_dot3"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/dot_normal" />
+
+                    <View
+                        android:id="@+id/v_dot4"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/dot_normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:clickable="true"
+            android:stateListAnimator="@anim/touch_raise"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="1dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TableRow
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_novel"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="有声书" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="24dp"
+                        style="@style/my_Padding_style"/>
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_music"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="音乐" />
+                </TableRow>
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    style="@style/my_Padding_style"/>
+
+                <TableRow
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_radio"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="电台" />
+
+                    <View android:layout_width="1px"
+                        android:layout_height="22dp"
+                        style="@style/my_Padding_style"/>
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_crosstalk"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="相声评书" />
+                </TableRow>
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    style="@style/my_Padding_style"/>
+
+                <TableRow
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_children"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="儿童" />
+
+                    <View android:layout_width="1px"
+                        android:layout_height="22dp"
+                        style="@style/my_Padding_style"/>
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_radio_play"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="广播剧" />
+                </TableRow>
+
+            </TableLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:clickable="true"
+            android:stateListAnimator="@anim/touch_raise"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="1dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TableRow
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_news"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="资讯" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="24dp"
+                        style="@style/my_Padding_style"/>
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_entertainmate"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="脱口秀" />
+                </TableRow>
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    style="@style/my_Padding_style"/>
+
+                <TableRow
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_language"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="英语" />
+
+                    <View android:layout_width="1px"
+                        android:layout_height="22dp"
+                        style="@style/my_Padding_style"/>
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_life"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="情感生活" />
+                </TableRow>
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    style="@style/my_Padding_style"/>
+
+                <TableRow
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_history"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="历史人文" />
+
+                    <View android:layout_width="1px"
+                        android:layout_height="22dp"
+                        style="@style/my_Padding_style"/>
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_school"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="校园" />
+                </TableRow>
+
+            </TableLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:clickable="true"
+            android:stateListAnimator="@anim/touch_raise"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="1dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TableRow
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_train"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="教育培训" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="24dp"
+                        style="@style/my_Padding_style"/>
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_moive"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="电影" />
+                </TableRow>
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    style="@style/my_Padding_style"/>
+
+                <TableRow
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_game"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="动漫游戏" />
+
+                    <View android:layout_width="1px"
+                        android:layout_height="22dp"
+                        style="@style/my_Padding_style"/>
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_car"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="汽车" />
+                </TableRow>
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    style="@style/my_Padding_style"/>
+
+                <TableRow
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_it"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="IT科技" />
+
+                    <View android:layout_width="1px"
+                        android:layout_height="22dp"
+                        style="@style/my_Padding_style"/>
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_comic"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="戏曲" />
+                </TableRow>
+
+            </TableLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
+            android:clickable="true"
+            android:stateListAnimator="@anim/touch_raise"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="1dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TableRow
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_novel"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="有声书" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="24dp"
+                        style="@style/my_Padding_style"/>
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_music"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="音乐" />
+                </TableRow>
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    style="@style/my_Padding_style"/>
+
+                <TableRow
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_radio"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="电台" />
+
+                    <View android:layout_width="1px"
+                        android:layout_height="22dp"
+                        style="@style/my_Padding_style"/>
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_crosstalk"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="相声评书" />
+                </TableRow>
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    style="@style/my_Padding_style"/>
+
+                <TableRow
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_children"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="儿童" />
+
+                    <View android:layout_width="1px"
+                        android:layout_height="22dp"
+                        style="@style/my_Padding_style"/>
+
+                    <TextView
+                        android:paddingLeft="8dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/category_other"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="4dp"
+                        android:textSize="15sp"
+                        android:text="其他" />
+                </TableRow>
+
+            </TableLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- 顶部ViewPager -->
+        <FrameLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="51dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="160dp"
+               android:scaleType="fitXY"
+               android:src="@drawable/picture2"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

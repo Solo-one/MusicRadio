@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.kugoumusic.discover.discover_activity.SearchResultActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        style="@style/top_style"
+        android:layout_width="match_parent"
+        android:background="#f7f7f7">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="26dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="14dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_back_orange" />
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/search"
+            android:layout_toRightOf="@id/back"
+            android:background="@drawable/bg5"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:hint="演员、下一秒"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:singleLine="true"
+            android:textColorHint="#bfbfbf"
+            android:textCursorDrawable="@drawable/cursor_bg"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="搜索"
+            android:textColor="#F86543"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#00a9a9a9" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_below="@id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"></ListView>
+
+</RelativeLayout>

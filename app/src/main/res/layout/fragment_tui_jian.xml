@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myApp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ptr_scroll"
+    myApp:ptrHeaderBackground="#ececec"
+    myApp:ptrDrawable="@drawable/ic_loading_circle"
+    myApp:ptrAnimationStyle="rotate"
+    myApp:ptrHeaderTextColor="#676767"
+    myApp:ptrShowIndicator="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 顶部ViewPager -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+            </android.support.v4.view.ViewPager>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_gravity="bottom"
+                android:background="#33000000"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中国家庭院校园区域名字体现"
+                    android:textColor="#ffffff" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/v_dot0"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/dot_focused" />
+
+                    <View
+                        android:id="@+id/v_dot1"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/dot_normal" />
+
+                    <View
+                        android:id="@+id/v_dot2"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/dot_normal" />
+
+                    <View
+                        android:id="@+id/v_dot3"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/dot_normal" />
+
+                    <View
+                        android:id="@+id/v_dot4"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/dot_normal" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top"
+            android:background="#FFF"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/category_novel"
+                    android:paddingLeft="15dp"
+                    android:text="有声书" />
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="1dp"
+                    android:drawableTop="@drawable/category_radio_play"
+                    android:text="电台" />
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/category_moive"
+                    android:text="电影" />
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/category_crosstalk"
+                    android:text="相声评书" />
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/category_history"
+                    android:text="历史" />
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/category_car"
+                    android:text="汽车" />
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/category_entertainmate"
+                    android:text="脱口秀" />
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/category_comic"
+                    android:text="戏曲"
+                    android:textColor="#FC9174" />
+
+                <TextView
+                    style="@style/my_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/category_other"
+                    android:text="其它"
+                    android:textColor="#FC9174" />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <!-- 猜你喜欢 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#FFF">
+
+            <TextView
+                android:id="@+id/item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/finding_title_tag"
+                android:drawablePadding="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:text="猜你喜欢"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/more1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@id/item1"
+                android:drawablePadding="3dp"
+                android:drawableRight="@drawable/ic_more"
+                android:paddingRight="10dp"
+                android:text="更多"
+                android:textColor="#919090"
+                android:textSize="13sp" />
+
+            <com.example.asus.kugoumusic.selfwidget.MyGridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/item1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="8dp"
+                android:horizontalSpacing="1dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+
+        </RelativeLayout>
+
+        <!-- 小编推荐 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#FFF">
+
+            <TextView
+                android:id="@+id/item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/finding_title_tag"
+                android:drawablePadding="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:text="小编推荐"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/more2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@id/item2"
+                android:drawablePadding="3dp"
+                android:drawableRight="@drawable/ic_more"
+                android:paddingRight="10dp"
+                android:text="更多"
+                android:textColor="#919090"
+                android:textSize="13sp" />
+
+            <com.example.asus.kugoumusic.selfwidget.MyGridView
+                android:id="@+id/gridview1"
+                android:layout_below="@id/item2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="8dp"
+                android:horizontalSpacing="1dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+
+        </RelativeLayout>
+
+        <!-- 现场直播 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#FFF">
+
+            <TextView
+                android:id="@+id/item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/finding_title_tag"
+                android:drawablePadding="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:text="现场直播"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/more3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@id/item3"
+                android:drawablePadding="3dp"
+                android:drawableRight="@drawable/ic_more"
+                android:paddingRight="10dp"
+                android:text="更多"
+                android:textColor="#919090"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_below="@id/item3"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <!-- 顶部ViewPager -->
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/vp1"
+                            android:layout_width="match_parent"
+                            android:layout_height="125dp">
+
+                        </android.support.v4.view.ViewPager>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:layout_gravity="bottom"
+                            android:background="#33000000"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/tv_title"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="中国家庭院校园区域名字体现"-->
+                                <!--android:textColor="#ffffff" />-->
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:id="@+id/v_dot0_0"
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginRight="6dp"
+                                    android:background="@drawable/dot_focused" />
+
+                                <View
+                                    android:id="@+id/v_dot1_1"
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginRight="6dp"
+                                    android:background="@drawable/dot_normal" />
+
+                                <View
+                                    android:id="@+id/v_dot2_2"
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginRight="6dp"
+                                    android:background="@drawable/dot_normal" />
+
+                                <View
+                                    android:id="@+id/v_dot3_3"
+                                    android:layout_width="6dp"
+                                    android:layout_height="6dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginRight="6dp"
+                                    android:background="@drawable/dot_normal" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="中秋特辑许嵩：对月独饮江" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/finding_album_img"
+                        android:drawablePadding="1dp"
+                        android:layout_marginLeft="3dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="旧年华" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- 精品听单 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#FFF">
+
+            <TextView
+                android:id="@+id/item4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/finding_title_tag"
+                android:drawablePadding="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:text="精品听单"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/more4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@id/item4"
+                android:drawablePadding="3dp"
+                android:drawableRight="@drawable/ic_more"
+                android:paddingRight="10dp"
+                android:text="更多"
+                android:textColor="#919090"
+                android:textSize="13sp" />
+
+            <FrameLayout
+                android:id="@+id/container_gridview"
+                android:layout_below="@id/more4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="8dp">
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+        <!-- 付费精品 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="65dp"
+            android:background="#FFF">
+
+            <TextView
+                android:id="@+id/item5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/finding_title_tag"
+                android:drawablePadding="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:layout_marginBottom="6dp"
+                android:text="付费精品"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/more5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBaseline="@id/item5"
+                android:drawablePadding="3dp"
+                android:drawableRight="@drawable/ic_more"
+                android:paddingRight="10dp"
+                android:text="更多"
+                android:textColor="#919090"
+                android:textSize="13sp" />
+
+            <FrameLayout
+                android:id="@+id/container_gridview1"
+                android:layout_below="@id/more5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="8dp">
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

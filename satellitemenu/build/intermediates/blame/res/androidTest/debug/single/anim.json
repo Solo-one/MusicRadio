@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\sat_main_rotate_left.xml",
+        "source": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\bundles\\debug\\res\\anim\\sat_main_rotate_left.xml"
+    },
+    {
+        "merged": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\sat_item_click_interpolator.xml",
+        "source": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\bundles\\debug\\res\\anim\\sat_item_click_interpolator.xml"
+    },
+    {
+        "merged": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\sat_item_in_rotate_interpolator.xml",
+        "source": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\bundles\\debug\\res\\anim\\sat_item_in_rotate_interpolator.xml"
+    },
+    {
+        "merged": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\sat_item_anim_click.xml",
+        "source": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\bundles\\debug\\res\\anim\\sat_item_anim_click.xml"
+    },
+    {
+        "merged": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\sat_item_overshoot_interpolator.xml",
+        "source": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\bundles\\debug\\res\\anim\\sat_item_overshoot_interpolator.xml"
+    },
+    {
+        "merged": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\sat_item_anticipate_interpolator.xml",
+        "source": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\bundles\\debug\\res\\anim\\sat_item_anticipate_interpolator.xml"
+    },
+    {
+        "merged": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\sat_item_out_rotate_interpolator.xml",
+        "source": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\bundles\\debug\\res\\anim\\sat_item_out_rotate_interpolator.xml"
+    },
+    {
+        "merged": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\sat_main_rotate_right.xml",
+        "source": "E:\\MyProjects\\KuGouMusic\\satellitemenu\\build\\intermediates\\bundles\\debug\\res\\anim\\sat_main_rotate_right.xml"
+    }
+]

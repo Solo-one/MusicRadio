@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.asus.kugoumusic.discover.BenDiFragment">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#f2f2f2"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:tabMode="scrollable"
+        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorColor= "#f26e6e"
+        app:tabTextColor="#1b1b1b"
+        app:tabPaddingStart="0dp"
+        app:tabPaddingEnd="0dp"
+        app:tabContentStart="0dp"
+        app:tabMinWidth="80dp"
+        app:tabSelectedTextColor="#fc1b1b"
+        app:tabBackground="@drawable/tab_bg"
+        app:tabTextAppearance="@style/TabLayoutTextStyle1">
+
+    </android.support.design.widget.TabLayout>
+
+    <TextView
+        android:layout_below="@id/tabs"
+        android:padding="3dp"
+        android:gravity="center"
+        android:background="#aadcdbdb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:text="已占用0.00B,可用941.91MB"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_below="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SatelliteMenu"><attr format="integer" name="expandDuration"/><attr format="boolean" name="closeOnClick"/><attr format="float" name="totalSpacingDegree"/><attr format="dimension" name="satelliteDistance"/><attr format="reference" name="mainImage"/></declare-styleable>
+    <string name="empty"/>
+</resources>

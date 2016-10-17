@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.asus.kugoumusic.selfwidget.PagerEnabledSlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingPane"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_album_head"
+    tools:context="com.example.asus.kugoumusic.Guide.GuideActivity">
+
+    <RelativeLayout
+        android:id="@+id/left"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:background="#18a5a6a6">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00edecec"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="10dp">
+
+                    <com.example.asus.kugoumusic.selfwidget.CircleImageView
+                        android:id="@+id/headerPIC"
+                        android:layout_width="63dp"
+                        android:layout_height="63dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/myspace_head_img_default" />
+
+                    <TextView
+                        android:id="@+id/item0"
+                        style="@style/mine_style1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/headerPIC"
+                        android:drawableRight="@drawable/ic_more_pressed"
+                        android:text="立即登录" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+                <TextView
+                    android:id="@+id/item1_1"
+                    style="@style/mine_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/msg_center_img"
+                    android:drawableRight="@drawable/ic_more_pressed"
+                    android:text="消息中心" />
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+
+                <TextView
+                    android:id="@+id/item2_2"
+                    style="@style/mine_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_wd_rss"
+                    android:drawableRight="@drawable/ic_more_pressed"
+                    android:text="我的订阅" />
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+                <TextView
+                    android:id="@+id/item3_3"
+                    style="@style/mine_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/play_record_img"
+                    android:drawableRight="@drawable/ic_more_pressed"
+                    android:text="播放历史" />
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+                <TextView
+                    android:id="@+id/item4_4"
+                    style="@style/mine_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_wd_like"
+                    android:drawableRight="@drawable/ic_more_pressed"
+                    android:text="赞过的" />
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+                <TextView
+                    android:id="@+id/item5"
+                    style="@style/mine_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/my_points_img"
+                    android:drawableRight="@drawable/ic_more_pressed"
+                    android:text="我的积分" />
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+                <TextView
+                    android:id="@+id/item6"
+                    style="@style/mine_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/me_setting_carmode"
+                    android:drawableRight="@drawable/ic_more_pressed"
+                    android:text="车载模式" />
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+                <TextView
+                    android:id="@+id/item7"
+                    style="@style/mine_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_wd_robot"
+                    android:drawableRight="@drawable/ic_more_pressed"
+                    android:text="智能硬件设备" />
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+
+                <TextView
+                    android:id="@+id/item8"
+                    style="@style/mine_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/find_friend_img"
+                    android:drawableRight="@drawable/ic_more_pressed"
+                    android:text="找听友" />
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+                <TextView
+                    android:id="@+id/item9"
+                    style="@style/mine_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_wd_feedback"
+                    android:drawableRight="@drawable/ic_more_pressed"
+                    android:text="意见反馈" />
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+                <TextView
+                    android:id="@+id/item10"
+                    style="@style/mine_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_wd_mall"
+                    android:drawableRight="@drawable/ic_more_pressed"
+                    android:text="喜马拉雅商城" />
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+
+                <TextView
+                    android:id="@+id/item11"
+                    style="@style/mine_style1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_wd_setting"
+                    android:drawableRight="@drawable/ic_more_pressed"
+                    android:text="设置" />
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+
+                <TextView
+                    android:id="@+id/item12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="退出登录"
+                    android:textColor="#333" />
+
+                <TextView
+                    style="@style/mine_style_color1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        sothree:umanoPanelHeight="66dp"
+        sothree:umanoShadowHeight="0dp">
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="260dp">
+
+
+            <RadioGroup
+                android:id="@+id/viewpageRadiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/shadow_1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/item1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/bg4"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="8dp"
+                    android:text="发现"
+                    android:textColor="@color/text_state_color"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/item2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/bg1"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="8dp"
+                    android:text="订阅"
+                    android:textColor="@color/text_state_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="5dp" />
+
+                <RadioButton
+                    android:id="@+id/item3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/bg2"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="8dp"
+                    android:text="下载"
+                    android:textColor="@color/text_state_color"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/item4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/bg3"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="8dp"
+                    android:text="我的"
+                    android:textColor="@color/text_state_color"
+                    android:textSize="12sp" />
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-7dp"
+                android:checked="false"
+                android:clickable="true"
+                android:src="@drawable/play_icon_default" />
+
+            <TextView
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/play_icon_bg"
+                android:checked="false"
+                android:clickable="true"
+                android:textColor="@color/text_state_color"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <com.example.asus.kugoumusic.selfwidget.CircleImageView
+                android:id="@+id/album"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="11dp" />
+
+            <TextView
+                android:id="@+id/pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/play_icon_pause"
+                android:checked="false"
+                android:clickable="true"
+                android:textColor="@color/text_state_color"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <!-- 底部 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/stop"
+                android:background="@drawable/bottom_play_panel1"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/title_song"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="12dp"
+                    android:text="歌曲名称"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/artist_song"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_song"
+                    android:layout_centerHorizontal="true"
+                    android:text="歌手信息" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/aa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/play_current_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="0:00" />
+
+                        <SeekBar
+                            android:id="@+id/play_progress"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:max="100"
+                            android:maxHeight="1dp"
+                            android:minHeight="1dp"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/seekbar_img"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/play_song_total_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="0:00" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/aa"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/play_mode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/playmode_order" />
+
+
+                        <ImageView
+                            android:id="@+id/play_pause"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/player_toolbar_pause_normal" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/toolbar_loading_normal" />
+
+                        <ImageView
+                            android:id="@+id/previous"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/play_pause"
+                            android:src="@drawable/player_toolbar_previous_normal" />
+
+                        <ImageView
+                            android:id="@+id/next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/play_pause"
+                            android:src="@drawable/player_toolbar_next_normal" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/player_toolbar_playinglist_pressed" />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+</com.example.asus.kugoumusic.selfwidget.PagerEnabledSlidingPaneLayout>
+
+
+
+
+
+
